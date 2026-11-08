@@ -1,5 +1,4 @@
-k
-cat > app/src/main/AndroidManifest.xml <<'EOF'
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -11,9 +10,7 @@ cat > app/src/main/AndroidManifest.xml <<'EOF'
     <application
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:label="NK Message"
-        android:usesCleartextTraffic="false"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher">
+        android:usesCleartextTraffic="false">
 
         <activity
             android:name="com.nk.message.MainActivity"
@@ -27,5 +24,3 @@ cat > app/src/main/AndroidManifest.xml <<'EOF'
         </activity>
     </application>
 </manifest>
-EOF
-
